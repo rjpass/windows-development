@@ -24,10 +24,6 @@ npm install -g npm-windows-upgrade
 ## Java
 cinst -y jdk8
 
-## Ant, Maven
-cinst -y ant
-cinst -y maven
-
 ## Editors
 cinst -y intellijidea-community
 
@@ -53,6 +49,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
 
 # Pinning Things
 Install-ChocolateyPinnedTaskBarItem "$env:programfiles\Google\Chrome\Application\chrome.exe"
+Install-ChocolateyPinnedTaskBarItem "$env:tools\Cmder.exe"
 
 # Let's get Updates, too
 Install-WindowsUpdate -acceptEula
