@@ -41,7 +41,7 @@ cinst -y ruby.devkit
 
 cinst -y golang
 
-cinst -y python
+cinst -y python2
 cinst -y pip
 
 if (Test-PendingReboot) { Invoke-Reboot }
