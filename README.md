@@ -11,6 +11,8 @@ This will not install `docker`, `slack`, or `netbeans`.  It will also not instal
 
 You will also need to update the system PATH to include `%ANT_HOME%\bin`.
 
+In the Docker sys icon tray, right click and go to `Setttings`.  On `Shared Drives`, select "C".  on `Advanced`, change CPU to 6 and Memory to 16GB.
+
 Optionals:
 
 `cinst -y tortoisegit`
@@ -18,7 +20,7 @@ Optionals:
 
 ## Git credentials
 
-Git will work with Windows Credential Manager.  This uses Window's credential manager to securely save your passwords for github.  You will however need to clone using http for this to work.
+Git will work with Git Credential Manager.  This uses Window's credential manager to securely save your passwords for github.  You will however need to clone using http for this to work.
 
 IE: `git clone https://github.com/CleoDev/EFSS.git`  
 
