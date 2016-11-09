@@ -10,7 +10,7 @@ cinst -y cmder -pre
 cinst -y Gow
 
 ## Node, npm
-cinst -y nodejs.install
+cinst -y nodejs.install -version 4.5.0
 
 ## Git
 cinst -y git.install
