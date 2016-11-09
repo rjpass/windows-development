@@ -13,7 +13,13 @@ You will also need to update the system PATH to include `%ANT_HOME%\bin`.
 
 In the Docker sys icon tray, right click and go to `Setttings`.  On `Shared Drives`, select "C".  on `Advanced`, change CPU to 6 and Memory to 16GB.
 
-Optionals:
+## NPM
+
+I would move your default node_modules to somewhere other than Program Files: http://stackoverflow.com/questions/19874582/change-default-global-installation-directory-for-node-js-modules-in-windows
+
+  in C:\Users\{username}\, create .npmrc file with contents:  `prefix = "C:\\Users\\{username}\\AppData\\Roaming\\npm"`
+
+## Optionals:
 
 `cinst -y tortoisegit`
 

@@ -48,6 +48,7 @@ if (Test-PendingReboot) { Invoke-Reboot }
 ## Basics
 cinst -y vlc
 cinst -y GoogleChrome
+cinst -y firefox
 cinst -y 7zip.install
 cinst -y sysinternals
 cinst -y DotNet3.5
