@@ -11,6 +11,15 @@ This will not install `docker`, `slack`, or `netbeans`.  It will also not instal
 
 You will also need to update the system PATH to include `%ANT_HOME%\bin`.
 
+Finally, you'll need to run this command as an admin in PowerShell:  `npm install --global --production windows-build-tools`.
+
+Optionals:
+
+`cinst -y tortoisegit`
+
+
+## Git credentials
+
 Git will work with Windows Credential Manager.  This uses Window's credential manager to securely save your passwords for github.  You will however need to clone using http for this to work.
 
 IE: `git clone https://github.com/CleoDev/EFSS.git`  
