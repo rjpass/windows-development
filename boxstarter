@@ -9,17 +9,16 @@ cinst -y Microsoft-Hyper-V-All -source windowsFeatures
 cinst -y cmder -pre
 cinst -y Gow
 
-## Node, npm
-cinst -y nodejs.install -version 4.5.0
-
 ## Git
 cinst -y git.install
 cinst -y poshgit
 cinst -y git-credential-manager-for-windows 
 
 ## Node, npm
-cinst -y nodejs.install
+cinst -y nodejs.install -version 4.5.0
 npm install -g npm-windows-upgrade
+npm install -g npm@3.5.0
+npm install -g --production windows-build-tools
 
 ## Java
 cinst -y jdk8
@@ -59,5 +58,5 @@ if (Test-PendingReboot) { Invoke-Reboot }
 Install-ChocolateyPinnedTaskBarItem "$env:programfiles\Google\Chrome\Application\chrome.exe"
 Install-ChocolateyPinnedTaskBarItem "$env:tools\Cmder.exe"
 
-# Let's get Updates, too
+# Window's Updates, too
 Install-WindowsUpdate -acceptEula

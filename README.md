@@ -11,8 +11,6 @@ This will not install `docker`, `slack`, or `netbeans`.  It will also not instal
 
 You will also need to update the system PATH to include `%ANT_HOME%\bin`.
 
-Finally, you'll need to run this command as an admin in PowerShell:  `npm install --global --production windows-build-tools`.
-
 Optionals:
 
 `cinst -y tortoisegit`
