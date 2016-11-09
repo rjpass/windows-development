@@ -24,6 +24,10 @@ npm install -g npm-windows-upgrade
 ## Java
 cinst -y jdk8
 
+## Ant, Maven
+cinst -y ant
+cinst -y maven
+
 ## Editors
 cinst -y intellijidea-community
 
