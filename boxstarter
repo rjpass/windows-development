@@ -26,6 +26,14 @@ cinst -y jdk8
 
 ## Editors
 cinst -y intellijidea-community
+cinst -y notepadplusplus.install
+cinst -y sublimetext3
+
+## Notes
+cinst -y evernote
+
+## Skype
+cinst -y skype
 
 ## Ruby, Go, Python
 cinst -y ruby

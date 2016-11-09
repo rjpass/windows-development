@@ -7,7 +7,7 @@ http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/rjpass/wi
 
 After this finishes, reboot your machine.
 
-This will not install `docker` or `netbeans`.  It will also not install the unlimited strength policy jars.  You will need to install them manually.
+This will not install `docker`, `slack`, or `netbeans`.  It will also not install the unlimited strength policy jars.  You will need to install them manually.
 
 You will also need to update the system PATH to include `%ANT_HOME%\bin`.
 
