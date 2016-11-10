@@ -1,5 +1,5 @@
 # Allow reboots when needed
-$Boxstarter.RebootOk=$true
+#$Boxstarter.RebootOk=$true
 
 # Configure Windows
 Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowFullPathInTitleBar
