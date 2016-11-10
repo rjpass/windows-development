@@ -1,3 +1,6 @@
+# Allow reboots when needed
+$Boxstarter.RebootOk=$true
+
 # Configure Windows
 Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowFullPathInTitleBar
 
@@ -16,9 +19,9 @@ cinst -y git-credential-manager-for-windows
 
 ## Node, npm
 cinst -y nodejs.install -version 4.5.0
-npm install -g npm-windows-upgrade
-npm install -g npm@3.5.0
-npm install -g --production windows-build-tools
+cmd /c "refreshenv && npm install -g npm-windows-upgrade"
+cmd /c "refreshenv && npm install -g npm@3.5.0"
+cmd /c "refreshenv && npm install -g --production windows-build-tools"
 
 ## Java
 cinst -y jdk8
