@@ -31,6 +31,9 @@ choco install intellijidea-community
 choco install notepadplusplus.install
 choco install sublimetext3
 
+## SQL
+choco install dbeaver
+
 ## Notes
 choco install evernote
 
