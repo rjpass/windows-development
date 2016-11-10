@@ -9,58 +9,58 @@ Update-ExecutionPolicy Unrestricted
 cinst -y Microsoft-Hyper-V-All -source windowsFeatures
 
 # Packages
-cinst -y cmder -pre
-cinst -y Gow
+choco install cmder -pre
+choco install Gow
 
 ## Git
-cinst -y git.install
-cinst -y poshgit
-cinst -y git-credential-manager-for-windows 
+choco install git.install
+choco install poshgit
+choco install git-credential-manager-for-windows 
 
 ## Node, npm
-cinst -y nodejs.install -version 4.5.0
+choco install nodejs.install -version 4.5.0
 cmd /c "refreshenv && npm install -g npm-windows-upgrade"
 cmd /c "refreshenv && npm install -g npm@3.5.0"
 cmd /c "refreshenv && npm install -g --production windows-build-tools"
 
 ## Java
-cinst -y jdk8
+choco install jdk8
 
 ## Editors
-cinst -y intellijidea-community
-cinst -y notepadplusplus.install
-cinst -y sublimetext3
+choco install intellijidea-community
+choco install notepadplusplus.install
+choco install sublimetext3
 
 ## Notes
-cinst -y evernote
+choco install evernote
 
 ## Skype
-cinst -y skype
+choco install skype
 
 ## Ruby, Go, Python
-cinst -y ruby
-cinst -y ruby.devkit
+choco install ruby
+choco install ruby.devkit
 
-cinst -y golang
+choco install golang
 
-cinst -y python2
-cinst -y pip
+choco install python2
+choco install pip
 
 if (Test-PendingReboot) { Invoke-Reboot }
 
 ## Basics
-cinst -y vlc
-cinst -y GoogleChrome
-cinst -y firefox
-cinst -y 7zip.install
-cinst -y sysinternals
-cinst -y DotNet3.5
+choco install vlc
+choco install GoogleChrome
+choco install firefox
+choco install 7zip.install
+choco install sysinternals
+choco install DotNet3.5
 
 if (Test-PendingReboot) { Invoke-Reboot }
 
 # Pinning Things
-Install-ChocolateyPinnedTaskBarItem "$env:programfiles\Google\Chrome\Application\chrome.exe"
-Install-ChocolateyPinnedTaskBarItem "$env:tools\Cmder.exe"
+#Install-ChocolateyPinnedTaskBarItem "$env:programfiles\Google\Chrome\Application\chrome.exe"
+#Install-ChocolateyPinnedTaskBarItem "$env:tools\Cmder.exe"
 
 # Window's Updates, too
 Install-WindowsUpdate -acceptEula
