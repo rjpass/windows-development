@@ -51,6 +51,9 @@ choco install pip
 
 if (Test-PendingReboot) { Invoke-Reboot }
 
+#mRemoteNG
+choco install mremoteng -version 1.74.6023.15437
+
 ## Basics
 choco install vlc
 choco install GoogleChrome
