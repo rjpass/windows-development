@@ -26,8 +26,7 @@ I would move your default node_modules to somewhere other than Program Files: ht
 
 ## Optionals:
 
-`choco install tortoisegit`
-
+Install TortoiseGit (choco install doesn't seem to work)
 
 ## Git credentials
 
