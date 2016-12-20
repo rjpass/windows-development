@@ -7,7 +7,7 @@ http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/rjpass/wi
 
 After this finishes, reboot your machine.
 
-Next, run these commands from an admin PowerShell:
+Next, run these commands from an admin PowerShell:  
   `npm install -g npm-windows-upgrade`  
   `npm install -g npm@3.5.0`  
   `npm install -g --production windows-build-tools`  
