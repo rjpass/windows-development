@@ -12,6 +12,7 @@ cinst -y Microsoft-Hyper-V-All -source windowsFeatures
 choco install cmder -pre
 choco install Gow
 choco install maven
+choco install ant
 
 ## Git
 choco install git.install
