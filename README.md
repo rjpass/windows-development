@@ -7,6 +7,11 @@ http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/rjpass/wi
 
 After this finishes, reboot your machine.
 
+Next, run these commands from an admin PowerShell:
+`npm install -g npm-windows-upgrade`
+`npm install -g npm@3.5.0`
+`npm install -g --production windows-build-tools`
+
 This will not install `docker`, `slack`, or `netbeans`.  It will also not install the unlimited strength policy jars.  You will need to install them manually.
 
 You will also need to update the system PATH to include `%ANT_HOME%\bin`.

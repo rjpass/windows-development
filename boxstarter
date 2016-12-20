@@ -20,9 +20,6 @@ choco install git-credential-manager-for-windows
 
 ## Node, npm
 choco install nodejs.install -version 4.5.0
-cmd /c "refreshenv && npm install -g npm-windows-upgrade"
-cmd /c "refreshenv && npm install -g npm@3.5.0"
-cmd /c "refreshenv && npm install -g --production windows-build-tools"
 
 ## Java
 choco install jdk8
